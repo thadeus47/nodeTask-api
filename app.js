@@ -10,6 +10,10 @@ app.use(bodyParser.json());
 app.use(postsRouter);
 
 
+//Route 
+app.get('/',(req, res) => {
+    res.send('We are on home');
+});
 //Connect to DB
 const dbCon = process.env.DB_CONNECTION;
 
